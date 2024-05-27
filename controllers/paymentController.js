@@ -27,7 +27,7 @@ const verifyPayment = async(req, res) => {
     try{
         const result = await paymentService.verifyPayment(req.body);
         if(result){
-           // res.redirect('http://localhost:3000/view-posts')
+           // res.redirect('http://172.105.37.32:3000/view-posts')
             res.status(200).json({status: "success", message: "Payment Verified Successfully", data: result})
         }
     } catch (err) {

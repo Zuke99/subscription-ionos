@@ -19,7 +19,7 @@ const postingImage = async (req, res) => {
       const savedImage = await image.save();
   
       // Set the imageUrl based on your server URL and the image ID
-      savedImage.imageUrl = `http://localhost:6001/image/get-image/${savedImage._id}`;
+      savedImage.imageUrl = `http://172.105.37.32:6001/image/get-image/${savedImage._id}`;
       //this is for getting the image from the database
   
       // Save the updated Image model
